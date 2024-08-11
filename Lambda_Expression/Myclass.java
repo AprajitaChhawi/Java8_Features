@@ -33,8 +33,9 @@ public class Myclass implements A,B,FunctionalInterface,OneMoreInterface{
         c.hello();
         ((A) c).hello();
         ((B) c).hello();
-        c.sayBye();
-        c.sayHello();
+        c.sayBye(); // --> this is how we can call default meth
+        c.sayHello(); // --> this is how we can abstract method , first overriding and then calling
+        FunctionalInterface.sayHello2(); // -->this is how we can call static methods in class
     }
 
 }

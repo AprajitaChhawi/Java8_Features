@@ -6,4 +6,7 @@ public interface FunctionalInterface {
     default void sayBye(){
         System.out.println("Bye");
     }
+    public static void sayHello2(){
+        System.out.println("saying Bye again");
+    }
 }
